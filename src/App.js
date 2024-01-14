@@ -8,11 +8,13 @@ import Footer from "./components/Footer";
 // Import pages
 import Home from "./pages/Home";
 import PropertyDetails from "./pages/PropertyDetails";
+import HouseContextProvider from "./components/HouseContext";
 
 const App = () => {
   return (
     <div className="max-w-[1440px] mx-auto bg-white">
       {" "}
+      <HouseContextProvider>
       <Router>
         <Header />
         <Routes>
@@ -21,6 +23,7 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
+      </HouseContextProvider>
     </div>
   );
 };
