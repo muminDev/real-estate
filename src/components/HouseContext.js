@@ -21,11 +21,25 @@ const HouseContextProvider = ({ children }) => {
     });
 
     //remove duplicates
-    const uniqueCountries = ["Loaction (any)", ...new Set(allCountries)];
+    const uniqueCountries = ["Location (any)", ...new Set(allCountries)];
 
     //set countries state
     setCountries(uniqueCountries);
   }, []);
+
+  //return all properties
+  useEffect(() => {
+    const allProperties = houses.map((house) => {
+      return house.type;
+    });
+
+    //remove duplicates
+    const uniqueProperties = ["Location (any)", ...new Set(allProperties)];
+
+    //set properties state
+    setProperties(uniqueProperties);
+  }, []);
+
   return (
     <HouseContext.Provider
       value={{
