@@ -9,10 +9,17 @@ import House from "./House";
 //import link
 import { Link } from "react-router-dom";
 
-//import icons
-import { ImSpinner2 } from "react-icons/im";
 const HouseList = () => {
-  const { houses, loading } = useContext(HouseContext);
+  const { houses } = useContext(HouseContext);
+
+  if (houses.length < 1) {
+    return (
+      <div className="text-center text-3x1 text-gray-400 mt-48">
+        Sorry, nothing found
+      </div>
+    );
+  }
+
   return (
     <section className="m-20">
       <div className="container">

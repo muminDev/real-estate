@@ -95,6 +95,7 @@ const HouseContextProvider = ({ children }) => {
         }
       }
     });
+
     setHouses(newHouses);
   };
 
