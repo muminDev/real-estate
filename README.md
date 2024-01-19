@@ -24,3 +24,8 @@ Follow these steps to set up the project locally:
    ```bash
    git clone https://github.com/your-username/real-estate-explorer.git
 
+Install dependencies:
+  ```bash
+cd real-estate-explorer
+npm install
+
