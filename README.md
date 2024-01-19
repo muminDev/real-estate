@@ -29,10 +29,13 @@ Install dependencies:
    cd real-estate-explorer
    npm install
 
+
 Run the application:
-npm start
+   npm start
+
 
 The application will be accessible at http://localhost:3000 in your web browser.
+
 
 ##Contributions are welcome! Feel free to open issues or submit pull requests to improve the functionality or design.
 
