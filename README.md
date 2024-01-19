@@ -25,8 +25,9 @@ Follow these steps to set up the project locally:
    git clone https://github.com/your-username/real-estate-explorer.git
 
 Install dependencies:
-cd real-estate-explorer
-npm install
+   ```bash
+   cd real-estate-explorer
+   npm install
 
 Run the application:
 npm start
