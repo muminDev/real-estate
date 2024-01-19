@@ -59,18 +59,61 @@ const PropertyDetails = () => {
             </div>
             <div>{house.description}</div>
           </div>
-          <div className="flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg">
-            <div>
-              <div>
+          <div
+            className="flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg
+          px-6 py-8"
+          >
+            <div className="flex items-center gap-x-4 mb-8">
+              <div className="w-20 h-20">
                 <img src={house.agent.image} alt="" />
               </div>
               <div>
-                <div>{house.agent.name}</div>
+                <div className="font-bold text-lg">{house.agent.name}</div>
                 <Link to={""} className="text-violet-700 text-sm">
                   View listings
                 </Link>
               </div>
             </div>
+            {/* form */}
+            <form>
+              <input
+                className="border border-gray-300 focus:border-violet-700 
+                outline-none rounded w-full px-2 h-12 text-sm mb-2"
+                type="text"
+                placeholder="Name*"
+              />
+              <input
+                className="border border-gray-300 focus:border-violet-700 
+                outline-none rounded w-full px-2 h-12 text-sm mb-2"
+                type="text"
+                placeholder="Email*"
+              />
+              <input
+                className="border border-gray-300 focus:border-violet-700 
+                outline-none rounded w-full px-2 h-12 text-sm mb-2"
+                type="text"
+                placeholder="Phone*"
+              />
+              <textarea
+                className="border border-gray-300 focus:border-violet-700 outline-none
+              resize-none rounded w-full p-4 h-36 text-sm text-gray-400"
+                placeholder="Message*"
+              ></textarea>
+              <div>
+                <button
+                  className="bg-violet-600 hover:bg-violet-800 text-white rounded px-4 py-2
+                text-sm w-full mb-2"
+                >
+                  Send message
+                </button>
+                <button
+                  className="bg-violet-600 hover:bg-violet-800 text-white rounded px-4 py-2 mr-2
+                text-sm w-full"
+                >
+                  Call
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
