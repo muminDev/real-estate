@@ -43,21 +43,34 @@ const PropertyDetails = () => {
             <div className="mb-8">
               <img src={house.imageLg} alt="" />
             </div>
-            <div className="flex gap-x-6 mb-4">
-              <div>
+            <div className="flex gap-x-6 mb-6 text-violet-700">
+              <div className="flex items-center gap-x-1">
                 <BiBed className="text-2xl" />
                 <div>{house.bedrooms}</div>
               </div>
-              <div>
+              <div className="flex items-center gap-x-1">
                 <BiBath className="text-2xl" />
                 <div>{house.bathrooms}</div>
               </div>
-              <div>
+              <div className="flex items-center gap-x-1">
                 <BiArea className="text-2xl" />
                 <div>{house.surface}</div>
               </div>
             </div>
             <div>{house.description}</div>
+          </div>
+          <div className="flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg">
+            <div>
+              <div>
+                <img src={house.agent.image} alt="" />
+              </div>
+              <div>
+                <div>{house.agent.name}</div>
+                <Link to={""} className="text-violet-700 text-sm">
+                  View listings
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
