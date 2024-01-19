@@ -102,13 +102,13 @@ const PropertyDetails = () => {
               <div>
                 <button
                   className="bg-violet-600 hover:bg-violet-800 text-white rounded px-4 py-2
-                text-sm w-full mb-2"
+                text-sm w-full mb-2 transition"
                 >
                   Send message
                 </button>
                 <button
                   className="bg-violet-600 hover:bg-violet-800 text-white rounded px-4 py-2 mr-2
-                text-sm w-full"
+                text-sm w-full transition"
                 >
                   Call
                 </button>
